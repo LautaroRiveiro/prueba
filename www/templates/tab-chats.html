@@ -1,6 +1,11 @@
 <ion-view view-title="Chats">
   <ion-content>
     <ion-list>
+      <button ng-click="Sonido()">SONIDO</button>
+    <button ng-click="Saludar()">SALUDAR</button>
+  <button ng-click="Vibrar()">VIBRAR</button>
+
+  <button ng-click="Saludar()"></button>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
